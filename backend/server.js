@@ -4,9 +4,7 @@ import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import cookieParser from 'cookie-parser';
-
-
-require('dotenv').config();
+import 'dotenv/config';
 
 
 const salt = 10;

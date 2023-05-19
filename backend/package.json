@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@babel/cli": "^7.21.5",
+    "babel": "^6.23.0",
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -21,5 +25,8 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.3.1",
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
